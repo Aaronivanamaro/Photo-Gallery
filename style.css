@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+:root {
+
+--bgr-1:url(/images/20191129_2101171.jpg);
+--bgr-2:url(/images/DSC_0076.jpg);
+--bgr-3:url(/images/DSC_0091.jpg);
+--bgr-4:url(/images/DSC_0094.jpg);
+--bgr-5:url(/images/DSC_0113.jpg);
+--bgr-6:url(/images/DSC_0293.jpg);
+--f-ss:'Raleway', sans-serif;
+--f-hw:'Kaushan Script', cursive;
+--clr-white: white;
+
+}
+
+body {
+    margin: 0;
+    font-family: var(--f-ss);
+    background:linear-gradient(to right, #43c6ac, #f8ffae);
+}
+header {
+    margin: 0 auto;
+    display: grid;
+    padding: 0.7rem;
+}
+h1 {
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(255,255,255,0.8);
+    font-size: 2.25rem;
+}
+/*---------PHOTO GALLERY----------*/
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.item {
+    flex:1;
+    min-height: 500px;
+    min-width:150px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:var(--clr-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:rgba(0, 0, 0, 0.2);
+    background-blend-mode: color;
+    transition:
+        transform 0.5s,
+        font-size 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+        flex 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+        background 0.2s;
+}
+.item-1 {
+    background-image: var(--bgr-1);
+}
+.item-2 {
+    background-image: var(--bgr-2);
+}
+.item-3 {
+    background-image: var(--bgr-3);
+}
+.item-4 {
+    background-image: var(--bgr-4);
+}
+.item-5 {
+    background-image: var(--bgr-5);
+}
+.item-6 {
+    background-image: var(--bgr-6);
+}
+.middle {
+    font-family: var(--f-hw);
+    font-size: 3rem;
+    text-shadow: 3px 3px 4px rgba(0,0,0,1);
+}
+p {
+    font-size: 1.5rem;
+    text-shadow: 1.5px 1.5px 2.5px rgba(0,0,0,1);
+}
+.item > * {
+    width:100%;
+    transition: transform 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex:1 0 auto;
+}
+.item > *:first-child { 
+    transform: translateY(-100%);
+    visibility: hidden;
+}
+.open-active > *:first-child { 
+    transform: translateY(0);
+    visibility: visible;
+}
+.item > *:last-child { 
+    transform: translateY(100%);
+    visibility: hidden;
+}
+.open-active > *:last-child { 
+    transform: translateY(0);
+    visibility: visible;
+}
+.open {
+    flex:5;
+}
