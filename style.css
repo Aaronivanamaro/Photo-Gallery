@@ -7,12 +7,12 @@
 
 :root {
 
---bgr-1:url(/images/20191129_2101171.jpg);
---bgr-2:url(/images/DSC_0076.jpg);
---bgr-3:url(/images/DSC_0091.jpg);
---bgr-4:url(/images/DSC_0094.jpg);
---bgr-5:url(/images/DSC_0113.jpg);
---bgr-6:url(/images/DSC_0293.jpg);
+--bgr-1:url(https://i.ibb.co/Njft2ss/20191129-2101171.jpg);
+--bgr-2:url(https://i.ibb.co/nPbYsrf/DSC-0076.jpg);
+--bgr-3:url(https://i.ibb.co/s3ZhWQQ/DSC-0091.jpg);
+--bgr-4:url(https://i.ibb.co/dmKPYx9/DSC-0094.jpg);
+--bgr-5:url(https://i.ibb.co/4Mhfqyz/DSC-0113.jpg);
+--bgr-6:url(https://i.ibb.co/xC2VNcc/DSC-0293.jpg);
 --f-ss:'Raleway', sans-serif;
 --f-hw:'Kaushan Script', cursive;
 --clr-white: white;
